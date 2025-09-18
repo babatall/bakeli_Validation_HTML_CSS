@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+main {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 2px 4px #888484;
+  height: 70px;
+}
+.logo_content {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo_content .logo {
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.logo_content h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+.navbar-links li {
+  margin-right: 50px;
+}
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+
+#accueil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#accueil .right img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+#accueil .left,
+#accueil .right {
+  margin-top: 30px;
+}
+#accueil .left h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: black;
+  line-height: normal;
+}
+#accueil .left p {
+  margin-bottom: 15px;
+  font-size: large;
+}
+#accueil .left .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+#accueil .left .button {
+  background-color: #0f80eb;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 7px;
+}
+#accueil .left .button:hover {
+  background-color: blue;
+  transition: ease-in 0.5s;
+}
+/* cours */
+#cours {
+  margin: 50px 120px 0 120px;
+  padding: 50px 0 40px;
+}
+.content_cours {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.content_cours .item {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+/* Planning */
+#planning {
+  margin: 50px 120px 0 120px;
+  padding: 50px 0 40px;
+}
+#planning h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+#planning .description {
+  font-size: 16px;
+  color: #636262;
+  margin-bottom: 10px;
+}
+
+#planning table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#planning thead {
+  background: #f0efeff1;
+}
+
+#planning th,
+#planning td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#planning tbody tr {
+  background: #ffffff;
+}
+
+#planning th {
+  font-weight: bold;
+}
+/* photo */
+#galerie {
+  margin: 50px 120px 0 120px;
+  padding: 50px 0;
+}
+
+#galerie h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#galerie .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+#galerie .gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* contact */
+#contact {
+  margin: 50px 120px 0 120px;
+  padding: 50px 0;
+}
+
+form {
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 5px 2px 5px #0000001a;
+  border-radius: 20px;
+  overflow: hidden;
+}
+label,
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+}
+input,
+select {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bolder;
+}
+
+button {
+  background: #0f80eb;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+}
+footer {
+  background-color: #ffffff;
+}
+footer div {
+  margin: 50px 120px 0 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+/* Tablettes */
+@media (max-width: 992px) {
+  .navbar-links {
+    gap: 5%;
+    margin-right: 10px;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  #accueil {
+    flex-direction: column;
+    text-align: center;
+  }
+  #accueil .left h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  .logo_content {
+    margin-left: 20px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .navbar-links li {
+    margin: 10px;
+  }
+
+  #accueil .left h1 {
+    font-size: 26px;
+  }
+  #accueil .right img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content_cours {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #planning table {
+    font-size: 14px;
+  }
+
+  #galerie .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* @media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+  }
+  .logo_content h5 {
+    font-size: 14px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .navbar-links li {
+    margin: 5px 0;
+  }
+  .navbar-links li a {
+    font-size: 13px;
+  }
+
+  #accueil {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+  #accueil .left h1 {
+    font-size: 20px;
+  }
+  #accueil .left p {
+    font-size: 13px;
+  }
+  #accueil .left .button {
+    padding: 10px;
+  }
+  #accueil .left .button a {
+    font-size: 13px;
+  }
+  #accueil .right img {
+    max-width: 100%;
+    height: auto;
+  }
+  #cours {
+    margin: 15px;
+  }
+
+  .content_cours {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content_cours .item {
+    flex: 1 1 100%;
+    font-size: 13px;
+    padding: 15px;
+  }
+  #planning {
+    margin: 15px;
+    width: 95%;
+  }
+
+  #planning table {
+    font-size: 11px;
+    display: block;
+    overflow-x: auto;
+    width: 300px;
+    margin: auto;
+  }
+  #galerie {
+    margin: 15px;
+  }
+
+  #galerie .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+  }
+
+  #contact {
+    margin: 15px;
+  }
+
+  form {
+    padding: 10px;
+    width: 100%;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+} */

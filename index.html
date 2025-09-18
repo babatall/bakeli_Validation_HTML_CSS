@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Académie Teranga</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo_content">
+        <div class="logo"></div>
+        <h5>Académie Teranga</h5>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#cours">Cours</a></li>
+        <li><a href="#planning">Planning</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="accueil">
+        <div class="left">
+          <h1>
+            Initiez-vous au HTML <br />
+            & CSS
+          </h1>
+          <p>
+            Bienvenue sur notre mini-site d'exercice. Reproduisez cette page en
+            <br />
+            respectant la structure, les couleurs, les espacements et la <br />
+            typographie. C'est un excellent entraînement pour maîtriser les
+            <br />
+            bases.
+          </p>
+          <div class="button">
+            <a href="#">Commencer </a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="baniere.jpg" alt="html/css" />
+        </div>
+      </section>
+      <section id="cours">
+        <h2>Nos Cours</h2>
+        <p>Trois parcours pour bien démarrer :</p>
+        <div class="content_cours">
+          <div class="item">
+            <h3>HTML Débutant</h3>
+            <p>
+              Balises, structure, titres, paragraphes, <br />
+              listes et liens.
+            </p>
+          </div>
+          <div class="item">
+            <h3>CSS Fondamentaux</h3>
+            <p>
+              Sélecteurs, couleurs, boîtes, marges,<br />
+              paddings et bordures.
+            </p>
+          </div>
+          <div class="item">
+            <h3>Mise en page</h3>
+            <p>
+              Flexbox & Grid pour organiser <br />
+              votre contenu facilement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="planning">
+        <h2>Planning des Cours</h2>
+        <p>Un exemple de tableau simple à reproduire :</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Jours</th>
+              <th>Thème</th>
+              <th>Durée</th>
+              <th>Devoir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lundi</td>
+              <td>Structure HTML</td>
+              <td>2h</td>
+              <td>Créer une page de test</td>
+            </tr>
+            <tr>
+              <td>Mardi</td>
+              <td>Styles CSS</td>
+              <td>2h</td>
+              <td>Mettre en forme les titres</td>
+            </tr>
+            <tr>
+              <td>Mercredi</td>
+              <td>Flexbox + Grid</td>
+              <td>2h</td>
+              <td>Construire une grille de cartes</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+          <img src="html5-3372584_1280.png" alt="Image 1" />
+          <img src="html5-386614_1280.jpg" alt="Image 2" />
+          <img src="code-3600810_1280.png" alt="Image 3" />
+          <img src="laptop-3214756_1280.png" alt="Image 4" />
+          <img src="website-3374825_1280.jpg" alt="Image 5" />
+          <img src="baniere.jpg" alt="Image 6" />
+          <img src="ai-generated-8775233_1280.png" alt="Image 7" />
+          <img src="html5-386614_1280.jpg" alt="Image 8" />
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>N'hésitez pas à nous écrire :</p>
+        <form action="#">
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" placeholder="Votre Nom" /><br />
+          <label for="email">Email :</label>
+          <input type="email" placeholder="emai@gmail.com" /><br />
+          <label for="sujet">Sujet :</label><br />
+          <select name="" id="">
+            <br />
+            <option value="val1">Choisissez un sujet</option>
+            <option value="val1">Inscripton</option>
+            <option value="val1">Inscripton</option>
+            <option value="val1">Inscripton</option></select
+          ><br />
+          <label for="message">Message :</label><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Votre message..."
+          ></textarea
+          ><br />
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+      <footer>
+        <div>
+          <p>© 2025 Académie Teranga. Tous droits réservés..</p>
+          <p>Exercice HTML & CSS – Niveau débutant</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
