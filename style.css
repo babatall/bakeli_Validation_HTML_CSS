@@ -246,7 +246,7 @@ footer div {
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   main{
       width: 100%;
   }
@@ -293,8 +293,8 @@ footer div {
     align-items: center;
     text-align: center;
   }
-}
-/* @media (max-width: 600px) {
+} */
+@media (max-width: 600px) {
   body {
     font-size: 12px;
   }
@@ -398,5 +398,6 @@ footer div {
     text-align: center;
     font-size: 12px;
   }
-} */
+}
+
 
